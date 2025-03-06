@@ -4,11 +4,27 @@ import React from "react";
 function App() {
   return (
     <div>
-      <h1>Hello React!!</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
+  );
+}
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+function Menu() {
+  return (
+    <>
+      <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
+    </>
+  );
+}
+function Footer() {
+  return (
+    <footer>{new Date().toLocaleTimeString()} We're currently open!</footer>
   );
 }
 
